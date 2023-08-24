@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bill payer finder.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section class="w-full h-[100vh] flex justify-center items-center flex-col bg-orange-300 px-2" >
+        <h1 class=" leading-[1.5] text-3xl font-extrabold text-gray-700 text-center line">এই মাসের ওয়াই-ফাই বিল দিবে
+        <span id="name" class="text-red-600 ">______</span>রা</h1>
+        <button class="text-3xl bg-zinc-500 text-white font-semibold py-3 px-5 rounded-2xl mt-20" id="button">খুজুন</button>
+    </section>
+
+    <script>
+        document.getElementById("button").addEventListener("click",function(){
+
+            const nusrat=[ 'Jan', 'Apr', 'Jul', 'Oct' ]
+            const saiful=[ 'Feb', 'May', 'Aug', 'Nov' ]
+            const shepa=[ 'Mar', 'Jun', 'Sep', 'Dec' ]
+
+            // const thisMOnth=Date().split(" ")[1]
+            const thisMOnth="Feb"
+            
+            let datePlace=document.getElementById("name")
+
+            if(nusrat.indexOf(thisMOnth) >=0){
+                datePlace.innerText="নুসরাত"
+            }
+            else if(saiful.indexOf(thisMOnth) >=0){
+                datePlace.innerText="সাইফুল"
+            }
+            else if(shepa.indexOf(thisMOnth) >=0){
+                datePlace.innerText="শিপা"
+            }
+            else{
+                console.log("something is wrong")
+            }
+            
+            
+
+        })
+    </script>
+</body>
+</html>
