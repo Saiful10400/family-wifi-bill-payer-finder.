@@ -9,7 +9,7 @@
 <body>
     <section class="w-full h-[100vh] flex justify-center items-center flex-col bg-orange-300 px-2" >
         <h1 class=" leading-[1.5] text-3xl font-extrabold text-gray-700 text-center line">এই <span id="TisMOnth" class="text-red-600"></span> মাসের ওয়াই-ফাই বিল দিবে
-        <span id="name" class="text-red-600 ">______</span>রা</h1>
+        <span id="name" class="text-red-600 ">______</span></h1>
         <button class="text-3xl bg-zinc-500 text-white font-semibold py-3 px-5 rounded-2xl mt-20" id="button">খুজুন</button>
     </section>
 
@@ -30,13 +30,13 @@
             let datePlace=document.getElementById("name")
 
             if(nusrat.indexOf(thisMOnth) >=0){
-                datePlace.innerText="নুসরাত"
+                datePlace.innerText="নুসরাতরা"
             }
             else if(saiful.indexOf(thisMOnth) >=0){
-                datePlace.innerText="সাইফুল"
+                datePlace.innerText="সাইফুলরা"
             }
             else if(shepa.indexOf(thisMOnth) >=0){
-                datePlace.innerText="শিপা"
+                datePlace.innerText="শিপারা"
             }
             else{
                 console.log("something is wrong")
